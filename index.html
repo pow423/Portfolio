@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranai - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <button class="nav-btn active" data-section="home">
+                <i class="fas fa-home"></i>
+            </button>
+            <button class="nav-btn" data-section="about">
+                <i class="fas fa-user"></i>
+            </button>
+            <button class="nav-btn" data-section="skills">
+                <i class="fas fa-code"></i>
+            </button>
+            <button class="nav-btn" data-section="projects">
+                <i class="fas fa-folder"></i>
+            </button>
+            <button class="nav-btn" data-section="experience">
+                <i class="fas fa-briefcase"></i>
+            </button>
+            <button class="nav-btn" data-section="contact">
+                <i class="fas fa-envelope"></i>
+            </button>
+            <button class="nav-btn" id="downloadBtn">
+                <i class="fas fa-download"></i>
+            </button>
+            <button class="nav-btn" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+        <div class="shape shape-7"></div>
+        <div class="shape shape-8"></div>
+        <div class="shape shape-9"></div>
+        <div class="shape shape-10"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hello-text">Hello, I'm</p>
+                    <div class="name-container">
+                        <h1 class="hero-name">PRANAI</h1>
+                        <div class="name-line"></div>
+                    </div>
+                    <p class="hero-description">
+                        I craft beautiful, responsive websites with modern technologies and 
+                        a passion for creating engaging user experiences.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects Done</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#contact" class="social-btn">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-btn" id="socialDownloadBtn">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-glow"></div>
+                        <div class="profile-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvgdGZtD04EILmLG5xNEMpPhOHsPynsRiGQ&s" alt="Profile">
+                        </div>
+                        <div class="status-dot"></div>
+                        <div class="floating-icons">
+                            <div class="floating-icon icon-1"><i class="fab fa-react"></i></div>
+                            <div class="floating-icon icon-2"><i class="fab fa-js"></i></div>
+                            <div class="floating-icon icon-3"><i class="fab fa-node-js"></i></div>
+                            <div class="floating-icon icon-4"><i class="fas fa-database"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <p>Scroll Down</p>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate developer with a love for creating amazing digital experiences</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>My Journey</h3>
+                        <p>
+                            Experienced in web development, I specialize in creating modern, responsive, and 
+                            user-friendly applications. My journey started with a curiosity about how websites work, and it has 
+                            evolved into a passion for crafting digital experiences that make a difference.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <h3>My Philosophy</h3>
+                        <p>
+                            I believe in writing clean, maintainable code and staying up-to-date with the latest technologies and 
+                            best practices. When I'm not coding, you can find me exploring new design trends, contributing to 
+                            open-source projects, or sharing knowledge with the developer community.
+                        </p>
+                    </div>
+                    <div class="traits">
+                        <span class="trait">Problem Solver</span>
+                        <span class="trait">Team Player</span>
+                        <span class="trait">Quick Learner</span>
+                        <span class="trait">Detail Oriented</span>
+                        <span class="trait">Creative Thinker</span>
+                        <span class="trait">Tech Enthusiast</span>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stat">
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <div class="stat-number">0+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-icon"><i class="fas fa-headset"></i></div>
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with to bring ideas to life</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="react">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="95"></div>
+                        </div>
+                        <span class="progress-text">95%</span>
+                    </div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card" data-skill="nextjs">
+                    <div class="skill-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Next.js</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90"></div>
+                        </div>
+                        <span class="progress-text">90%</span>
+                    </div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card" data-skill="typescript">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>TypeScript</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="88"></div>
+                        </div>
+                        <span class="progress-text">88%</span>
+                    </div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card" data-skill="nodejs">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85"></div>
+                        </div>
+                        <span class="progress-text">85%</span>
+                    </div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card" data-skill="design">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80"></div>
+                        </div>
+                        <span class="progress-text">80%</span>
+                    </div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card" data-skill="mobile">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Dev</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75"></div>
+                        </div>
+                        <span class="progress-text">75%</span>
+                    </div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card" data-skill="database">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="82"></div>
+                        </div>
+                        <span class="progress-text">82%</span>
+                    </div>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card" data-skill="devops">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>DevOps</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="70"></div>
+                        </div>
+                        <span class="progress-text">70%</span>
+                    </div>
+                    <div class="skill-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work that I'm proud of</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x200/4F46E5/FFFFFF?text=E-Commerce" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Full Stack</div>
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with React, Node.js, and MongoDB featuring secure payments and real-time inventory management.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                <div class="project-card" data-category="webapp">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x200/7C3AED/FFFFFF?text=Task+Manager" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Web App</div>
+                        <h3>Task Management App</h3>
+                        <p>Collaborative task management tool with real-time updates, team collaboration features, and advanced project tracking.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                <div class="project-card" data-category="api">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x200/059669/FFFFFF?text=Weather+App" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">API Integration</div>
+                        <h3>Weather Dashboard</h3>
+                        <p>Beautiful weather app with location-based forecasts, interactive maps, and detailed weather analytics with PWA support.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">API Integration</span>
+                            <span class="tag">Charts</span>
+                            <span class="tag">PWA</span>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x200/DC2626/FFFFFF?text=Portfolio" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Frontend</div>
+                        <h3>Portfolio Website</h3>
+                        <p>Responsive portfolio with modern animations, dark mode support, and interactive elements showcasing creative design skills.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Framer Motion</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey and key achievements</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-date">2022 - Present</div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Senior Frontend Developer</h3>
+                            <span class="company">Tech Solutions Inc.</span>
+                        </div>
+                        <p>Leading frontend development team, architecting scalable React applications, and mentoring junior developers. Implemented modern development practices and improved team productivity by 40%.</p>
+                        <div class="experience-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Team Leadership</span>
+                            <span class="skill-tag">Architecture</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">2020 - 2022</div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Full Stack Developer</h3>
+                            <span class="company">Digital Agency Co.</span>
+                        </div>
+                        <p>Developed end-to-end web applications using modern technologies and collaborated with design teams. Successfully delivered 25+ client projects with 98% satisfaction rate.</p>
+                        <div class="experience-skills">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">API Development</span>
+                            <span class="skill-tag">Client Relations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">2019 - 2020</div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Frontend Developer</h3>
+                            <span class="company">Startup Hub</span>
+                        </div>
+                        <p>Built responsive web applications and implemented pixel-perfect designs from Figma mockups. Contributed to the company's first major product launch reaching 10K+ users.</p>
+                        <div class="experience-skills">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!--Internship-->
+  <section id="internships" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Internships</h2>
+      <p class="section-subtitle">Professional Experience</p>
+    </div>
+
+    <div class="carousel-wrapper">
+      <button class="carousel-btn left" onclick="scrollContainer('internCarousel', -300)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="carousel-track intern-track" id="internCarousel">
+        <div class="intern-card">
+          <img src="internship.png" alt="Internship 1" />
+          <h3>Web Dev Intern</h3>
+          <p>May–June 2024</p>
+        </div>
+        <!-- Repeat for 6 cards -->
+      </div>
+
+      <button class="carousel-btn right" onclick="scrollContainer('internCarousel', 300)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+<!--Certificate-->
+<section id="certificates" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-subtitle">Professional Achievements</p>
+    </div>
+
+    <div class="carousel-wrapper">
+      <button class="carousel-btn left" onclick="scrollContainer('certCarousel', -300)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="carousel-track cert-track" id="certCarousel">
+        <div class="cert-card">
+          <img src="https://wallpapers.com/images/hd/link-hd-wallpaper-and-background-image-71mfep3ai8bib1mn.jpg" alt="Certificate 1" />
+          <h3>IBM Data Analyst</h3>
+          <p>IBM • 2025</p>
+        </div>
+        <!-- Repeat for 6 cards -->
+      </div>
+
+      <button class="carousel-btn right" onclick="scrollContainer('certCarousel', 300)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project or just say hello</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>hello@dmanikanta.site</p>
+                            <a href="mailto:hello@dmanikanta.site" class="contact-link">Send Email</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                            <a href="tel:+15551234567" class="contact-link">Call Now</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                            <span class="contact-link">Available Worldwide</span>
+                        </div>
+                    </div>
+                    <div class="contact-availability">
+                        <h3>Availability</h3>
+                        <div class="availability-status">
+                            <div class="status-dot available"></div>
+                            <span>Available for new projects</span>
+                        </div>
+                        <p>Currently accepting freelance work and full-time opportunities</p>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-btn large">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-btn large">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-btn large">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-btn large">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select Budget Range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-plus">$25,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project, timeline, and any specific requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Pranai</h3>
+                    <p>Full Stack Developer crafting digital experiences</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2022 Pranai. All rights reserved. Built with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chat Assistant -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <div class="chat-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chat-info">
+                <h3>AI Assistant</h3>
+                <p>Ask me about Pranai</p>
+            </div>
+            <button class="chat-close" id="chatClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message assistant-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hi! I'm Pranai's AI assistant. I can help you learn more about his work, skills, and experience. What would you like to know?</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <form class="chat-form" id="chatForm">
+                <input type="text" id="chatInput" placeholder="Ask me anything about Manikanta..." required>
+                <button type="submit" class="chat-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chat Toggle Button -->
+    <button class="chat-toggle" id="chatToggle">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
